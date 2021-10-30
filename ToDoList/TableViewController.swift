@@ -7,33 +7,39 @@
 
 import UIKit
 
+struct list {
+    var title : String
+}
+
 class TableViewController: UITableViewController {
+    
+    var item : [list] = [list(title: "weakup")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ListID")
+        
+        
+        
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return item.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListID", for: indexPath)
 
         // Configure the cell...
 
@@ -41,13 +47,12 @@ class TableViewController: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+    
+//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        // Return false if you do not want the specified item to be editable.
+//        return true
+//    }
+    
 
     /*
     // Override to support editing the table view.

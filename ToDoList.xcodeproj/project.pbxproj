@@ -14,6 +14,8 @@
 		B9C6E18C272C402300B64B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C6E18B272C402300B64B19 /* Assets.xcassets */; };
 		B9C6E18F272C402300B64B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C6E18D272C402300B64B19 /* LaunchScreen.storyboard */; };
 		B9C6E197272C946D00B64B19 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6E196272C946C00B64B19 /* TableViewController.swift */; };
+		B9C6E19A272D4CDA00B64B19 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6E198272D4CDA00B64B19 /* TableViewCell.swift */; };
+		B9C6E19B272D4CDA00B64B19 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C6E199272D4CDA00B64B19 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B9C6E18E272C402300B64B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9C6E190272C402300B64B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9C6E196272C946C00B64B19 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B9C6E198272D4CDA00B64B19 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B9C6E199272D4CDA00B64B19 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				B9C6E184272C402000B64B19 /* SceneDelegate.swift */,
 				B9C6E186272C402000B64B19 /* ViewController.swift */,
 				B9C6E188272C402000B64B19 /* Main.storyboard */,
+				B9C6E198272D4CDA00B64B19 /* TableViewCell.swift */,
+				B9C6E199272D4CDA00B64B19 /* TableViewCell.xib */,
 				B9C6E196272C946C00B64B19 /* TableViewController.swift */,
 				B9C6E18B272C402300B64B19 /* Assets.xcassets */,
 				B9C6E18D272C402300B64B19 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C6E18F272C402300B64B19 /* LaunchScreen.storyboard in Resources */,
+				B9C6E19B272D4CDA00B64B19 /* TableViewCell.xib in Resources */,
 				B9C6E18C272C402300B64B19 /* Assets.xcassets in Resources */,
 				B9C6E18A272C402000B64B19 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C6E19A272D4CDA00B64B19 /* TableViewCell.swift in Sources */,
 				B9C6E187272C402000B64B19 /* ViewController.swift in Sources */,
 				B9C6E183272C402000B64B19 /* AppDelegate.swift in Sources */,
 				B9C6E185272C402000B64B19 /* SceneDelegate.swift in Sources */,

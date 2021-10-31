@@ -7,13 +7,13 @@
 
 import UIKit
 
-struct list {
+struct Task {
     var title : String
 }
 
 class TableViewController: UITableViewController {
     
-    var item : [list] = [list(title: "weakup")]
+    var items = [Task]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,47 @@ class TableViewController: UITableViewController {
         
         
     }
+    
+    
+    
+    
+    @IBAction func addBtnPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "cancel", style: .default) { (cancel) in
+            
+        }
+        
+        let save = UIAlertAction(title: "save", style: .default) { (save) in
+            
+            self.items.append(Task(title: textField.text!))
+            self.tableView.reloadData()
+            
+        }
+        
+        alert.addTextField { (text) in
+            textField = text
+            textField.placeholder = "Add new item"
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(save)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+
 
     // MARK: - Table view data source
 
@@ -34,14 +75,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return item.count
+        return items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListID", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListID", for: indexPath) as! TableViewCell
+        cell.titleLabel.text = items[indexPath.row].title
 
         return cell
     }
@@ -57,18 +97,18 @@ class TableViewController: UITableViewController {
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
+     itingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+     
     }
     */
 
     /*
     // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
     */

@@ -42,54 +42,14 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="NeA-Di-P1j">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MTF-FK-1DY">
                             <connections>
-                                <segue destination="IVD-x3-u5P" kind="show" id="d9a-iS-Ft4"/>
+                                <action selector="addBtnPressed:" destination="sNA-pT-vRR" id="yfJ-mC-92X"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p9-jS-On4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="-687"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="T8u-vQ-oae">
-            <objects>
-                <viewController id="IVD-x3-u5P" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="E1z-7l-i9b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add lists" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="twb-4a-zhF">
-                                <rect key="frame" x="20" y="128" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDz-p6-6Jz">
-                                <rect key="frame" x="20" y="182" width="374" height="38"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Create">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vzW-2H-70E"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                        <constraints>
-                            <constraint firstItem="vzW-2H-70E" firstAttribute="trailing" secondItem="kDz-p6-6Jz" secondAttribute="trailing" constant="20" id="2N5-eV-XrM"/>
-                            <constraint firstItem="vzW-2H-70E" firstAttribute="trailing" secondItem="twb-4a-zhF" secondAttribute="trailing" constant="20" id="BPk-6f-WQt"/>
-                            <constraint firstItem="kDz-p6-6Jz" firstAttribute="top" secondItem="twb-4a-zhF" secondAttribute="bottom" constant="20" id="IVw-iU-qml"/>
-                            <constraint firstItem="twb-4a-zhF" firstAttribute="centerX" secondItem="E1z-7l-i9b" secondAttribute="centerX" id="Tix-Je-P4R"/>
-                            <constraint firstItem="kDz-p6-6Jz" firstAttribute="width" secondItem="twb-4a-zhF" secondAttribute="width" id="bAs-DH-f9v"/>
-                            <constraint firstItem="twb-4a-zhF" firstAttribute="top" secondItem="vzW-2H-70E" secondAttribute="top" constant="40" id="bww-QO-7eY"/>
-                            <constraint firstItem="kDz-p6-6Jz" firstAttribute="leading" secondItem="vzW-2H-70E" secondAttribute="leading" constant="20" id="mDK-wa-LNM"/>
-                            <constraint firstItem="twb-4a-zhF" firstAttribute="leading" secondItem="vzW-2H-70E" secondAttribute="leading" constant="20" id="u4p-dn-OdO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="4bb-Pi-GJ2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jez-GT-I6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2775" y="-687"/>
+            <point key="canvasLocation" x="1949" y="-685"/>
         </scene>
         <!--Item-->
         <scene sceneID="wRO-2b-f67">
@@ -144,9 +104,6 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

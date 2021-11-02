@@ -46,10 +46,75 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="KTl-cZ-jZb" kind="show" identifier="Conect" id="cMX-qa-T4k"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p9-jS-On4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1949" y="-685"/>
+        </scene>
+        <!--View Controller Update-->
+        <scene sceneID="RNM-yd-jce">
+            <objects>
+                <viewController id="KTl-cZ-jZb" customClass="ViewControllerUpdate" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UjK-Yu-1Bt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-qz-r5B">
+                                <rect key="frame" x="20" y="177" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cEP-ZO-WUX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Row Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-16-Y7H">
+                                <rect key="frame" x="20" y="148" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OSn-I7-iAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-ZX-yYT">
+                                <rect key="frame" x="173" y="217" width="83" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="9Al-dO-P2I"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Update">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="UpdateRowButton:" destination="KTl-cZ-jZb" eventType="touchUpInside" id="xt0-zx-pJf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eyw-sf-MTS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VL0-ZX-yYT" firstAttribute="top" secondItem="jHU-qz-r5B" secondAttribute="bottom" constant="10" id="5HO-ZA-8ys"/>
+                            <constraint firstItem="aqa-16-Y7H" firstAttribute="top" secondItem="eyw-sf-MTS" secondAttribute="top" constant="60" id="BaW-H2-oCq"/>
+                            <constraint firstItem="jHU-qz-r5B" firstAttribute="top" secondItem="aqa-16-Y7H" secondAttribute="bottom" constant="8" id="Cde-eM-EGx"/>
+                            <constraint firstItem="VL0-ZX-yYT" firstAttribute="leading" secondItem="eyw-sf-MTS" secondAttribute="leading" constant="173" id="Fut-aw-sEY"/>
+                            <constraint firstItem="eyw-sf-MTS" firstAttribute="trailing" secondItem="aqa-16-Y7H" secondAttribute="trailing" constant="20" id="enO-xO-3CU"/>
+                            <constraint firstItem="eyw-sf-MTS" firstAttribute="trailing" secondItem="VL0-ZX-yYT" secondAttribute="trailing" constant="158" id="lts-Ir-J4j"/>
+                            <constraint firstItem="aqa-16-Y7H" firstAttribute="leading" secondItem="eyw-sf-MTS" secondAttribute="leading" constant="20" id="pTq-nb-Zgs"/>
+                            <constraint firstItem="jHU-qz-r5B" firstAttribute="leading" secondItem="eyw-sf-MTS" secondAttribute="leading" constant="20" id="rHP-Ie-cbH"/>
+                            <constraint firstItem="eyw-sf-MTS" firstAttribute="trailing" secondItem="jHU-qz-r5B" secondAttribute="trailing" constant="20" id="soO-F2-jcE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bC7-50-6Ze"/>
+                    <connections>
+                        <outlet property="myRowDatta" destination="jHU-qz-r5B" id="6xR-uF-NJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ou-E1-QrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857.971014492754" y="-657.58928571428567"/>
         </scene>
         <!--Item-->
         <scene sceneID="wRO-2b-f67">

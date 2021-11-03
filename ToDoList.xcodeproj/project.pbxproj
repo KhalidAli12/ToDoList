@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9918A7227301FCB00BC00CB /* ViewControllerUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9918A7127301FCB00BC00CB /* ViewControllerUpdate.swift */; };
 		B9C6E183272C402000B64B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6E182272C402000B64B19 /* AppDelegate.swift */; };
 		B9C6E185272C402000B64B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6E184272C402000B64B19 /* SceneDelegate.swift */; };
 		B9C6E187272C402000B64B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6E186272C402000B64B19 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9918A7127301FCB00BC00CB /* ViewControllerUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUpdate.swift; sourceTree = "<group>"; };
 		B9C6E17F272C402000B64B19 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C6E182272C402000B64B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C6E184272C402000B64B19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				B9C6E184272C402000B64B19 /* SceneDelegate.swift */,
 				B9C6E186272C402000B64B19 /* ViewController.swift */,
 				B9C6E188272C402000B64B19 /* Main.storyboard */,
+				B9918A7127301FCB00BC00CB /* ViewControllerUpdate.swift */,
 				B9C6E198272D4CDA00B64B19 /* TableViewCell.swift */,
 				B9C6E199272D4CDA00B64B19 /* TableViewCell.xib */,
 				B9C6E196272C946C00B64B19 /* TableViewController.swift */,
@@ -153,6 +156,7 @@
 				B9C6E183272C402000B64B19 /* AppDelegate.swift in Sources */,
 				B9C6E185272C402000B64B19 /* SceneDelegate.swift in Sources */,
 				B9C6E197272C946D00B64B19 /* TableViewController.swift in Sources */,
+				B9918A7227301FCB00BC00CB /* ViewControllerUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

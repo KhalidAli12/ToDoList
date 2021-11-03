@@ -51,14 +51,17 @@ class TableViewController: UITableViewController, passDataBack {
         }
         
         let save = UIAlertAction(title: "save", style: .default) { (save) in
-            
+        
+            UserDefaults.standard.set(textField.text, forKey: "saved")
             self.items.append(Task(title: textField.text!))
             self.tableView.reloadData()
             
         }
         
         alert.addTextField { (text) in
+            let savedText = UserDefaults.standard.string(forKey: "saved")
             textField = text
+            textField.text = savedText
             textField.placeholder = "Add new item"
         }
         
@@ -67,7 +70,7 @@ class TableViewController: UITableViewController, passDataBack {
         
         self.present(alert, animated: true, completion: nil)
         
-//        UserDefaults.standard.set(items, forKey: "mmm")
+        //UserDefaults.standard.set(items, forKey: "mmm")
         
     }
     
@@ -107,7 +110,7 @@ class TableViewController: UITableViewController, passDataBack {
 //        // Return false if you do not want the specified item to be editable.
 //        return true
 //    }
-    
+//
 
     /*
     // Override to support editing the table view.
@@ -128,13 +131,14 @@ class TableViewController: UITableViewController, passDataBack {
     }
     */
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+//    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//        // Return false if you do not want the item to be re-orderable.
+//        return true
+//    }
+    
+    
 
     /*
     // MARK: - Navigation
@@ -171,6 +175,5 @@ class TableViewController: UITableViewController, passDataBack {
     func updateRow(updateName: String) {
         items[currentIndex].title = updateName
         tableView.reloadData()
-    }
-
+    }    
 }

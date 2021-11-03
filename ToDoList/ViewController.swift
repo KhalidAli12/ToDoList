@@ -15,6 +15,8 @@ class ViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+      //  data1 = UserDefaults.standard.object(forKey: "todolist")as? [String]
+      
     }
 
 

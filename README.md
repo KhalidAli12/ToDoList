@@ -1,4 +1,4 @@
-**ToDoList application (Note)
+**ToDoList application (Notes)
 
 **Description :
 To do list is the fun, flexible, and free way to organize plans, event and more.

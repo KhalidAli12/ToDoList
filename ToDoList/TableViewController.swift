@@ -13,18 +13,16 @@ struct Task {
 
 
 class TableViewController: UITableViewController, passDataBack {
-   
+    
     var items = [Task]()
     var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let save = UserDefaults.standard.string(forKey: "mmm") as? [Task]{
-//            items = save
-//        }
+
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ListID")
-        
+
     
         
     }
@@ -33,6 +31,8 @@ class TableViewController: UITableViewController, passDataBack {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             
             items.remove(at: indexPath.row)
+          //  print(indexPath.row)
+            
             
         }
         
@@ -44,11 +44,13 @@ class TableViewController: UITableViewController, passDataBack {
 
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
+      
         
-        let cancel = UIAlertAction(title: "cancel", style: .default) { (cancel) in
+       let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
+        
+       let cancel = UIAlertAction(title: "cancel", style: .default) { (cancel) in
             
-        }
+       }
         
         let save = UIAlertAction(title: "save", style: .default) { (save) in
         
@@ -70,7 +72,6 @@ class TableViewController: UITableViewController, passDataBack {
         
         self.present(alert, animated: true, completion: nil)
         
-        //UserDefaults.standard.set(items, forKey: "mmm")
         
     }
     
@@ -84,7 +85,6 @@ class TableViewController: UITableViewController, passDataBack {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

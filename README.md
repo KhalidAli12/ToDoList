@@ -1,9 +1,9 @@
-**ToDoList application (Notes)
+ ToDoList application (Notes)
 
-**Description :
+### Description :
 To do list is the fun, flexible, and free way to organize plans, event and more.
 
-**Arrangement of project interfaces 
+### Arrangement of project interfaces 
 
 - The home interface contains an expressive image of the application , The Swift file associated with the interface is “ViewController”
 
@@ -19,13 +19,13 @@ To do list is the fun, flexible, and free way to organize plans, event and more.
 
  - First, I made an array called “items”, in which the events entered by the user are stored to be displayed later in the table 
 
-- I created an alert so that the user can enter data (events) , The alert code was written in three steps 
+***- I created an alert so that the user can enter data (events) , The alert code was written in three steps 
 1-Defining the alert through "UIAlertController"
 2- Defining cancel  and save in alert through “UIAlertAction” with a note that in case of saving we take the variable (text) entered by the user and add it to the array
 3-I added the action that I created to the alert
 
 
-**Upcoming Feature :
+### Upcoming Feature :
 
 - Edit the list by swap , move any list the index will be change. 
 - Saving data from database 
